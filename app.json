@@ -1,0 +1,12 @@
+{
+  "name": "ankiquiz",
+  "displayName": "ankiquiz",
+  "expo": {
+    "name": "ankiquiz",
+    "slug": "ankiquiz",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
