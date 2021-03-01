@@ -2,7 +2,7 @@ namespace App {
   type Answer = {
     id: number;
     text: string;
-    istruthy: boolean;
+    truthy: boolean;
     selected: boolean;
   };
 
@@ -18,5 +18,10 @@ namespace App {
     answered: boolean;
     question: string;
     answers: Answer[];
+  };
+
+  type Routes = {
+    Quiz: undefined;
+    Anki: undefined;
   };
 }
