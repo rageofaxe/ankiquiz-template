@@ -21,7 +21,7 @@ const $errors = $questions.map(
 export const $store = combine({
   questions: $questions,
   currentIndex: $currentIndex,
-  currentQuestion: combine<number, App.Question[], Function>(
+  currentQuestion: combine<number, App.Question[], App.Question>(
     $currentIndex,
     $questions,
     R.prop

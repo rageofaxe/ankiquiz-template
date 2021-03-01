@@ -15,7 +15,7 @@ $questions.on(makeAnswer, (state, { answer, questionIdx: i, answerIdx: j }) =>
     : R.pipe(
         R.set(R.lensPath([i, "answers", j, "selected"]), true),
         R.set(R.lensPath([i, "answered"]), true),
-        R.set(R.lensPath([i, "isright"]), answer.istruthy),
-        R.set(R.lensPath([i, "iswrong"]), !answer.istruthy)
+        R.set(R.lensPath([i, "right"]), answer.truthy),
+        R.set(R.lensPath([i, "wrong"]), !answer.truthy)
       )(state)
 );
