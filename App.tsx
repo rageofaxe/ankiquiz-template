@@ -6,10 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Anki from "./src/screens/Anki";
 import Quiz from "./src/screens/Quiz";
 
-const Stack = createStackNavigator<{
-  Quiz: undefined;
-  Anki: undefined;
-}>();
+const Stack = createStackNavigator<App.Routes>();
 
 export default () => (
   <NavigationContainer>
